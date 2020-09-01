@@ -13,4 +13,3 @@ FROM alpine:3.12
 ENV OSSUTIL_VERSION 1.6.18
 COPY --from=build /ossutil-${OSSUTIL_VERSION} /usr/local/bin/ossutil
 ENTRYPOINT ["/usr/local/bin/ossutil"]
-
